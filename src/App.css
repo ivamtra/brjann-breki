@@ -36,3 +36,40 @@
     transform: rotate(360deg);
   }
 }
+
+.brjansi-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.brjann-img {
+  width: 75%;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+html {
+  /* background-color: brown; */
+}
+
+.call-container {
+  justify-content: baseline;
+  align-items: flex-start;
+}
+
+.call-button {
+  color: green;
+  border: 1px black solid;
+  border-radius: 100%;
+  padding: 0.3em;
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+}
