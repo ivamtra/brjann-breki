@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { IoIosCall } from "react-icons/io";
-
+import {MdCallEnd } from 'react-icons/md'
 import brjann from "./images/brjansi.jpeg";
 import { useEffect, useState } from "react";
 import sound from './sounds/saellEddu.mp3'
@@ -37,6 +37,10 @@ function App() {
   const start = () => {
     audio.play()
   }
+  const hangUp = () => {
+    audio.pause()
+  }
+
   return (
     <div className="wrapper">
       <div className="brjansi-container">
@@ -44,6 +48,8 @@ function App() {
       </div>
       <div className="call-container">
         <IoIosCall onClick={() => start()} className="call-button"/>
+        <MdCallEnd onClick={() => hangUp()} className="call-button hang-up"/>
+
       </div>
     </div>
   );

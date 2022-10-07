@@ -41,11 +41,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 100%;
+  max-width: 500px;
 }
 
 .brjann-img {
-  width: 75%;
+  width: 100%;
 }
 
 .wrapper {
@@ -60,8 +61,17 @@ html {
 }
 
 .call-container {
-  justify-content: baseline;
+  display: flex;
+  max-width: 500px;
+
+
+  justify-content: space-around;
   align-items: flex-start;
+  width: 100%;
+  max-width: 500px;
+  padding-left: 5em;
+  padding-right: 5em;
+  padding-top: 1em;
 }
 
 .call-button {
@@ -69,8 +79,12 @@ html {
   border: 1px black solid;
   border-radius: 100%;
   padding: 0.3em;
-  width: 100px;
-  height: 100px;
+  width: 20%;
+  height: 20%;
   margin-top: 20px;
   cursor: pointer;
+}
+
+.hang-up{
+  color: red;
 }
