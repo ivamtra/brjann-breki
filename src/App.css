@@ -46,7 +46,11 @@
 }
 
 .brjann-img {
-  width: 100%;
+  width: 88%;
+}
+
+.spacer {
+  height: 10vh;
 }
 
 .wrapper {
@@ -54,10 +58,19 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
 }
 
 html {
   /* background-color: brown; */
+  
+}
+
+.background {
+  position: relative;
+  background-image: url('./images/index.jpeg');
+  background-size: cover;
+  height: 100vh;
 }
 
 .call-container {
@@ -75,7 +88,8 @@ html {
 }
 
 .call-button {
-  color: green;
+  background-color: green;
+  color: white;
   border: 1px black solid;
   border-radius: 100%;
   padding: 0.3em;
@@ -86,5 +100,5 @@ html {
 }
 
 .hang-up{
-  color: red;
+  background-color: red;
 }
