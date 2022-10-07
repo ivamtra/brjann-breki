@@ -67,9 +67,9 @@ html {
 }
 
 .background {
-  position: relative;
-  background-image: url('./images/index.jpeg');
+  background-image: url('./images/index.png');
   background-size: cover;
+  background-position: center center;
   height: 100vh;
 }
 
@@ -97,6 +97,10 @@ html {
   height: 20%;
   margin-top: 20px;
   cursor: pointer;
+}
+
+.big-spacer {
+  height: 30vh;
 }
 
 .hang-up{

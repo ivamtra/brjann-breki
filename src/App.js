@@ -43,6 +43,7 @@ function App() {
         <div className="brjansi-container">
           <img className="brjann-img" src={brjann} alt="" />
         </div>
+        <div className="big-spacer"></div>
         <div className="call-container">
           <IoIosCall onClick={() => start()} className="call-button" />
           <MdCallEnd onClick={() => hangUp()} className="call-button hang-up" />
