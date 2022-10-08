@@ -26,14 +26,21 @@ const useAudio = (url) => {
   return [playing, toggle];
 };
 
+const random = (list) => {
+  return parseInt(Math.random()*list.length*2)
+}
+
 function App() {
   let audio = new Audio(sound);
 
   let merzedes = new Audio(heyheyhey)
   useEffect(() => console.log(audio));
 
+  const audioList = [audio, merzedes]
+
   const start = () => {
-    merzedes.play();
+
+    audioList[random(audioList)].play();
   };
   const hangUp = () => {
     audio.pause();
